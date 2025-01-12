@@ -2,6 +2,10 @@ import React from "react";
 import Logo from "../../assets/images/coffee_logo.png";
 import { GiCoffeeCup } from "react-icons/gi";
 
+// for responsive navbar
+import { GiHamburgerMenu } from "react-icons/gi";
+import { RxCross2 } from "react-icons/rx";
+
 const Navbar = () => {
   const Menus: any[] = [
     {
@@ -12,12 +16,12 @@ const Navbar = () => {
     {
       id: 2,
       name: "Service",
-      link: "/service",
+      link: "/#services",
     },
     {
       id: 3,
       name: "About",
-      link: "/about",
+      link: "/#about",
     },
   ];
   return (

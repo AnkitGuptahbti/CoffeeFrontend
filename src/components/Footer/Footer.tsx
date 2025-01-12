@@ -36,7 +36,7 @@ const Footer = () => {
   return (
     <div style={BgImage} className="text-white">
       <div className="bg-black/40 min-h-[400px]">
-        <div className="container grid md:grid-cols-3  pb-20 pt-5">
+        <div className="container grid md:grid-cols-2  pb-20 pt-5">
           {/* Company details */}
           <div className="py-5 px-4 md:col-span-1">
             <a
@@ -51,7 +51,7 @@ const Footer = () => {
             </p>
             <a
               href="https://www.youtube.com"
-              className=" inline-block bg-gray-500 rounded-full py-2 px-4 mt-5 text-sm"
+              className=" inline-block bg-primary rounded-full py-2 px-4 mt-5 text-sm"
             >
               Visit our Youtube Channel
             </a>

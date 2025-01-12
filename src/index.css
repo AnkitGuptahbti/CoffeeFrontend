@@ -10,8 +10,12 @@
   to {
     transform: rotate(360deg);
   }
-
 }
-.spin{
-    animation: spin 40s linear infinite;
+.spin {
+  animation: spin 40s linear infinite;
+}
+
+/* for smoth scrool  */
+html {
+  scrool-behavior: smooth;
 }

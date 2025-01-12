@@ -1,10 +1,26 @@
 import React from "react";
 
 import HeroImg from "../../assets/images/coffee2.png";
-
+import { motion } from "motion/react";
+import { easeInOut } from "motion";
 const Homepage = () => {
   return (
-    <div className="min-h-[550px] sm:min-h-[600px] bg-[#39040c] flex justify-center items-center text-white">
+    <motion.div
+      initial={{
+        opacity: 0,
+        translateY: 50,
+      }}
+      whileInView={{
+        opacity: 1,
+        translateY: 0,
+      }}
+      transition={{
+        duration: 1,
+        ease: "easeInOut",
+      }}
+      viewport={{ once: true }}
+      className="min-h-[550px] sm:min-h-[600px] bg-[#39040c] flex justify-center items-center text-white"
+    >
       <div className="container pb-8 sm:pb-0">
         <div className="grid grid-cols-1 sm:grid-cols-2">
           {/* Text content section */}
@@ -35,7 +51,7 @@ const Homepage = () => {
             <img
               src={HeroImg}
               alt=""
-              className="w-[300px] sm-:w-[450px] sm:scale-110 mx-auto spin"
+              className="w-[300px] sm-:w-[450px] sm:scale-110 mx-auto  spin"
             />
             {/* Animating the "Hey Ayush" text */}
             <div className="bg-gradient-to-r from-primary to-primary/80 absolute top-0 -translate-x-1/2 translate-y-1/2 animate-slide-top transition-all duration-100 p-3 rounded-xl">
@@ -48,7 +64,7 @@ const Homepage = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

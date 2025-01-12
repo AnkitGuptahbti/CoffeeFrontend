@@ -27,14 +27,14 @@ const AppBanner = () => {
               </h1>
               <div className=" flex    justify-center sm:justify-start   items-center">
                 {/* Images content */}
-                <a href="#">
+                <a  data-aos="fade-right" href="#">
                   <img
                     src={appstore}
                     alt=""
                     className="max-w-[150px] sm:max-[120px] md:max-w-[200px]"
                   />
                 </a>
-                <a href="#">
+                <a  data-aos="fade-left" href="#">
                   <img
                     src={playstore}
                     alt=""
