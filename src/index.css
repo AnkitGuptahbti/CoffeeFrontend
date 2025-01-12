@@ -1,0 +1,17 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Pacifico&family=Playwrite+CA+Guides&family=Playwrite+US+Trad+Guides&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+
+}
+.spin{
+    animation: spin 40s linear infinite;
+}
