@@ -26,7 +26,6 @@ export default {
         slideTop: {
           "0%": {
             left: "0%",
-            
           },
           "100%": { left: "50%" },
         },
